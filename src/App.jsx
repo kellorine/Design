@@ -1,10 +1,10 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import Posters from './pages/Posters';
 
 export default function App() {
   return (
-    <Router>
+    <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-3">
         <Link className="navbar-brand" to="/">PosterSite</Link>
         <div className="collapse navbar-collapse">
@@ -19,6 +19,6 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/posters" element={<Posters />} />
       </Routes>
-    </Router>
+    </>
   );
 }

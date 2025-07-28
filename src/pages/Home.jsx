@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'; 
 export default function Home() {
   return (
     <div style={{
@@ -30,23 +31,23 @@ export default function Home() {
           Discover unique and modern poster designs created with passion and creativity.
         </p>
 
-        {/* Posters Button */}
-        <a href="/posters" style={{
-          backgroundColor: '#111',
-          color: '#fff',
-          padding: '0.8rem 2.5rem',
-          borderRadius: '50px',
-          textDecoration: 'none',
-          fontWeight: '600',
-          border: '1px solid #333',
-          fontSize: '1rem',
-          transition: 'all 0.3s ease-in-out',
-        }}
-          onMouseEnter={e => e.target.style.backgroundColor = '#333'}
-          onMouseLeave={e => e.target.style.backgroundColor = '#111'}
-        >
-          View Posters
-        </a>
+      {/* Posters Button */}
+<Link to="/posters" style={{
+  backgroundColor: '#111',
+  color: '#fff',
+  padding: '0.8rem 2.5rem',
+  borderRadius: '50px',
+  textDecoration: 'none',
+  fontWeight: '600',
+  border: '1px solid #333',
+  fontSize: '1rem',
+  transition: 'all 0.3s ease-in-out',
+}}
+  onMouseEnter={e => e.target.style.backgroundColor = '#333'}
+  onMouseLeave={e => e.target.style.backgroundColor = '#111'}
+>
+  View Posters
+</Link>
       </div>
 
       {/* Resume Section */}
